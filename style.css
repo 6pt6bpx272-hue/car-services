@@ -108,4 +108,57 @@ body {
     height: 180px;
     object-fit: cover;
     border-radius: 10px;
+
+}
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .featured-img img {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .featured-text {
+    text-align: center;
+  }
+}
+@media (max-width: 700px) {
+  .top-nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero-title, .hero-tag {
+    font-size: 18px;
+    bottom: 50px;
+    left: 10px;
+  }
+
+  .price-box, .service-box {
+    padding: 20px;
+    height: auto;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title, .hero-tag {
+    font-size: 14px;
+    padding: 4px 6px;
+  }
+
+  .gallery img {
+    height: 120px;
+  }
+
+  .price-box h2 {
+    font-size: 28px;
+  }
 }
